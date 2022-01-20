@@ -36,14 +36,14 @@ const NavBar = () => {
           </ul>
         </div>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4"></ul>
-          <form class="d-flex col-lg-2 text-white">¡Adquiere tu Primer Curso!  </form>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4"></ul>
+          <form className="d-flex col-lg-2 text-white">¡Adquiere tu Primer Curso!  </form>
 
           <button 
             type="button"
-            class="btn btn-danger pd-2"
-            onclick="mostrarProductosCarrito()"
+            className="btn btn-danger pd-2"
+           
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           >
