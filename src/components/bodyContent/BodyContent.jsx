@@ -22,11 +22,14 @@ let disminuir= ()=> setCont(cont-1);
           "
         >
 
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
+        <Card stock='25'></Card>
+        <Card stock='10'></Card>
+        <Card stock='5'></Card>
+        <Card stock='26'></Card>
+        <Card stock='7'></Card>
+        <Card stock='3'></Card>
+        <Card stock='8'></Card>
+        <Card stock='9'></Card>
         </div>
         </div>
     </section>

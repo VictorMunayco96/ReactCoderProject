@@ -1,28 +1,45 @@
-import React from 'react';
-import './ItemCount.css';
+import React from "react";
+import "./ItemCount.css";
 
-const ItemCount = () => {
+const ItemCount = (props) => {
+  const [cont, setCont] = React.useState(0);
 
-    const [cont, setCont]= React.useState(0);
+  let disminuir = () => setCont(cont - 1);
 
-    let disminuir= ()=> setCont(cont-1);
+  return (
+    <div>
+      <button
+        className="btn btn-info espacio"
+        onClick={function disminuir() {
+          if (cont > 0) setCont(cont - 1);
+        }}
+      >
+        {" "}
+        -{" "}
+      </button>
+
+      <label className="espacio"> {cont} </label>
+
+      <button
+        className="btn btn-info espacio"
+        onClick={function aumentar() {
 
 
-  return  <div> 
-            <button className="btn btn-info espacio" onClick={function disminuir(){
-           if(cont>0)
-            setCont(cont - 1);
-            }}> - </button>
+          if (cont == props.stock) {
+              alert("Se ha llegado al límite de vacantes");
+              return;
+            }
 
-            <label className="espacio" > {cont} </label>
-
-            <button className="btn btn-info espacio" onClick={function aumentar(){
-
-            
-            setCont(cont + 1);
-
-            }}> + </button>
-            </div>;
+          if (cont < parseInt(props.stock)){
+          setCont(cont + 1);
+        }
+        }}
+      >
+        {" "}
+        +{" "}
+      </button>
+    </div>
+  );
 };
 
 export default ItemCount;

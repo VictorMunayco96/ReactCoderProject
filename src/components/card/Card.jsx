@@ -1,7 +1,7 @@
 import React from 'react';
 import ItemCount from '../itemCount/ItemCount';
 
-const Card = () => {
+const Card = (props) => {
 
    
 
@@ -22,7 +22,8 @@ const Card = () => {
         <p> Hora: 123</p>
         <p>Instructor: LOREM </p>
         <h5>Precio: 123.12 </h5>
-        <ItemCount></ItemCount>
+        <p>Vacantes: {props.stock} </p>
+        <ItemCount stock={props.stock}></ItemCount>
        
       
       </div>
@@ -30,7 +31,7 @@ const Card = () => {
 
     <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
       <div className="text-center">
-        <a className="btn btn-outline-dark  mt-auto mb-2" href="#">
+        <a className="btn btn-outline-dark  mt-auto mb-2" href="/">
           Informacion
         </a>
         <a
@@ -38,7 +39,7 @@ const Card = () => {
           id="btncarro"
           value=""
          
-          href="#"
+          href="/"
         >
           Agregar
         </a>
