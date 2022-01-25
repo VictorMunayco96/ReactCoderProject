@@ -10,18 +10,18 @@ const Card = (props) => {
   <div className="card h-100">
     <img
       className="card-img-top"
-      src="https://img-c.udemycdn.com/course/240x135/980450_7fc0_3.jpg"
+      src={props.url}
       alt="..."
     />
 
     <div className="card-body p-4">
       <div className="text-center">
-        <h5 className="fw-bolder">ASD</h5>
+        <h5 className="fw-bolder">{props.nomcurso}</h5>
 
-        <p>Dia: 123 </p>
-        <p> Hora: 123</p>
-        <p>Instructor: LOREM </p>
-        <h5>Precio: 123.12 </h5>
+        <p>Dia: {props.dia} </p>
+        <p> Hora: {props.hora}</p>
+        <p>Instructor: {props.instructor} </p>
+        <h5>Precio: {props.monto} </h5>
         <p>Vacantes: {props.stock} </p>
         <ItemCount stock={props.stock}></ItemCount>
        
