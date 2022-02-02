@@ -4,6 +4,7 @@ import NavBar from './components/navBar/NavBar';
 import Slider from './components/slider/Slider';
 import Footer from './components/footer/Footer';
 import BodyContent from './components/bodyContent/BodyContent';
+import ItemDetail from './components/itemDetail/ItemDetail';
 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
     <div className="App">
      <NavBar/>
      <Slider/>
-     <BodyContent/>
+ {/*     <BodyContent/>  */}
+     <ItemDetail/>   
      <Footer/>
     </div>
   );

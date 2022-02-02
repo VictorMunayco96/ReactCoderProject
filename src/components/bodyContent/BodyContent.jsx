@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import React from "react";
 import Card from "../card/Card";
 import './BodyContent.css';
+import ItemDetail from "../itemDetail/ItemDetail";
 
 const BodyContent = () => {
 
@@ -129,7 +130,7 @@ setCont([
 
 
   
-  {
+{
 
 
 
@@ -139,10 +140,13 @@ setCont([
 )))
 
 
+
+
  
 
 
 }
+    
     
 
 

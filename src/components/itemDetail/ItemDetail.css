@@ -1,0 +1,24 @@
+.ubicaHora {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2em;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    background-color: #f2f4f8;
+  }
+  
+  .tituloUbica {
+    display: flex;
+    align-items: center;
+  }
+  
+  .tituloUbica h2 {
+    color: #002a8d;
+    margin-bottom: 30px;
+  }
+  iframe {
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  }
