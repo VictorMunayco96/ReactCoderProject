@@ -10,12 +10,6 @@ const ItemDetail = () => {
   const [data, setData] = useState([]);
 
 
-  useEffect(() => {
-
-    fetch(URL)
-      .then((response) => response.json())
-      .then((json) =>  setData(json))
-  }, []);
 
 
 
@@ -37,7 +31,6 @@ const ItemDetail = () => {
           .then((response) => response.json())
           .then((json) =>  setData(json));
 
-          console.log("Imprimió");
         
       
 
@@ -56,11 +49,11 @@ const ItemDetail = () => {
         <div className="ubicaHora">
 
           <div className="tituloUbica">
-            <h2>{data[0].description}</h2>
+            {(data.length>0)? <h2>{data[0].descripcion} </h2>:null}
           </div>
 
           <div className="ubicaMapa">
-            <div>dasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdas</div>
+          {(data.length>0)? <h2>PRECIO: {data[0].precio} </h2>:null}
           </div>
 
         </div>
